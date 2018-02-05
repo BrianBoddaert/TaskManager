@@ -1,0 +1,40 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+ 
+<html>
+ 
+<head>
+    <link type="text/css" rel="stylesheet" href="CSS/Style.css">
+    <title> history website </title>
+</head>
+ 
+<body>
+<div id="container">
+ 
+<div class="header">
+ <img src="" />
+  Task manager
+</div>
+           
+   
+<div id="nav">
+       
+           
+</div>          
+ 
+<div class="main">
+    <asp:ContentPlaceHolder id="MainContent1" runat="server">
+ 
+ 
+ 
+    </asp:ContentPlaceHolder>
+ 
+ 
+ 
+</div>
+       
+</div>
+     
+</body>
+</html>
