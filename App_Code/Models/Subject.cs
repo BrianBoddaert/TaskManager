@@ -17,4 +17,8 @@ public class Subject
         // TODO: Add constructor logic here
         //
     }
+
+    public string Name { get => name; set => name = value; }
+    public string SubjectID { get => subjectID; set => subjectID = value; }
+    public string Color { get => color; set => color = value; }
 }
