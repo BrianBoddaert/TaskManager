@@ -20,11 +20,11 @@ PATSSS Task manager
    
 <div class="nav">
  <div id="navbar" class="container" style="display:flex; height:100%;"> 
-      <a href="/TaskOverview"><div><center>Task overview</center> </div> </a>
-     <a href="/CreateTask"><div> <center>Create task</center></div></a>
-      <a href="/Subjects"><div><center>Subjects</center> </div> </a>
-     <a href="/Users"> <div><center>Users</center></div></a>
-      <a href="/Login"><div><center>Log in</center> </div> </a>
+     <a> <div><center>Task overview</center> </div></a>
+     <a><div> <center>Create task</center></div></a>
+     <a><div><center>Subjects</center> </div></a>
+     <a><div><center>Users</center></div></a>
+     <a><div><center>Log in</center> </div></a>
  </div>
 
 </div>          
