@@ -32,8 +32,8 @@ public partial class CreateTask : System.Web.UI.Page
 
         querStr = "";
 
-        querStr = "INSERT INTO taskmanager.tasks (name, subject_id, assignee_id, deadline, description, urgency)" +
-            "VALUES('" + nameTextBox.Text + "','" + 1 + "', '" + 1 + "','" + deadlineDate.Value + "','" + desTestBox.Text + "','" + urgencyList.SelectedIndex.ToString() + "')";
+        querStr = "INSERT INTO taskmanager.tasks (name, subject_id, assignee_id, deadline, description, urgency, type)" +
+            "VALUES('" + nameTextBox.Text + "','" + 1 + "', '" + 1 + "','" + deadlineDate.Value + "','" + desTestBox.Text + "','" + urgencyList.SelectedIndex.ToString() + "','" + typeList.SelectedIndex.ToString() + "')";
 
         cmd = new MySql.Data.MySqlClient.MySqlCommand(querStr, conn);
 
