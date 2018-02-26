@@ -197,3 +197,12 @@ text-decoration:none;
     border-radius:25px;
     width:60px;
 }
+
+.taskdiv {
+    width: 95%;
+    background-color: lightcoral;
+    margin: 0 auto;
+    border-radius: 5px;
+    margin-top: 8px;
+    height: 12%;
+}
