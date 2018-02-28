@@ -3,42 +3,21 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent1" Runat="Server">
     <div class="container" id="taskoverview" >
         <div class="taskbar" style="overflow-y: scroll;">
-            
-            <div class ="taskbartitle" style="background-color:#88C178;"> Small tasks  </div>     
-                <% foreach (var task in allTasks) { %>
-                    <%if (task.taskType == "0"){%>
-                        <div class ="taskdiv">
-                           <b>Name:</b>  <%= task.name %> <br />
-                           <b>Description:</b> <%= task.description %> <br />
-                           <b>Urgency:</b> <%= task.urgency %>
-                        </div>
-                    <%} %>
-                <%} %>
-                </div>
-                <div class="taskbar" style="border-left:1px;border-right:1px;">
-                    <div class ="taskbartitle"  style="background-color:#DAFF38"> Medium tasks </div>
-                <% foreach (var task in allTasks) { %>
-                    <%if (task.taskType == "1"){%>
-                        <div class ="taskdiv">
-                           <b>Name:</b>  <%= task.name %> <br />
-                           <b>Description:</b> <%= task.description %> <br />
-                           <b>Urgency:</b> <%= task.urgency %>
-                        </div>
-                    <%} %>
-                <%} %>
-                </div>
-                <div class="taskbar">
-                    <div class ="taskbartitle"  style="background-color:#C93528"> Big tasks </div>
-                <% foreach (var task in allTasks) { %>
-                    <%if (task.taskType == "2"){%>
-                        <div class ="taskdiv">
-                           <b>Name:</b>  <%= task.name %> <br />
-                           <b>Description:</b> <%= task.description %> <br />
-                           <b>Urgency:</b> <%= task.urgency %>
-                        </div>
-                    <%} %>
-                <%} %>
-                </div>
+        <div class ="taskbartitle" style="background-color:#88C178;"> Small tasks  </div>
+          <% foreach (var task in allTasks) { %>
+             <div class ="taskdiv">
+                <b>Name:</b>  <%= task.name %> <br />
+                <b>Description:</b> <%= task.description %> <br />
+                <b>Urgency:</b> <%= task.urgency %>
+            </div>
+          <% } %>
         </div>
+        <div class="taskbar" style="border-left:1px;border-right:1px;">
+            <div class ="taskbartitle"  style="background-color:#DAFF38"> Medium tasks </div>
+        </div>
+        <div class="taskbar">
+            <div class ="taskbartitle"  style="background-color:#C93528"> Big tasks </div>
+        </div>
+    </div>
     <div class="container" id="timeline"></div>
 </asp:Content>

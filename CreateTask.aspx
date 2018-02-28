@@ -42,14 +42,6 @@
                     <option style="background-color:red;" runat="server" value="red"></option>
                 </select>
             </div>
-            <div class="FillInBox">
-                <h2>Type: </h2>
-                <select ID="typeList" runat="server">
-                    <option  runat="server" selected value="small"></option>
-                    <option  runat="server" value="medium"></option>
-                    <option  runat="server" value="big"></option>
-                </select>
-            </div>
 
             <asp:Button ID="submitButton" Text="Add" runat="server" OnClick="addTask"/>
         </div>
