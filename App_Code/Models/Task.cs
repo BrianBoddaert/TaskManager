@@ -15,7 +15,6 @@ public class Task
     public DateTime deadline;
     public String description;
     public String urgency;
-    public String taskType;
 
 
     public Task()
@@ -32,5 +31,4 @@ public class Task
     public DateTime Deadline { get => deadline; set => deadline = value; }
     public string Description { get => description; set => description = value; }
     public string Urgency { get => urgency; set => urgency = value; }
-    public string TaskType { get => taskType; set => taskType = value; }
 }

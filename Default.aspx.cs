@@ -51,7 +51,6 @@ public partial class _Default : System.Web.UI.Page
             t.name = reader["name"].ToString();
             t.description = reader["description"].ToString();
             t.urgency = reader["urgency"].ToString();
-            t.taskType = reader["type"].ToString();
             //name += reader["name"].ToString();
             //temp += reader["deadline"].ToString();
             //desc += reader["description"].ToString();
