@@ -60,6 +60,9 @@
 =======
         <div class="taskbar">
         <div class ="taskbartitle" style="background-color:#88C178">Small tasks  </div>
+<<<<<<< HEAD
+>>>>>>> parent of cda0552... Create Task page
+=======
 >>>>>>> parent of cda0552... Create Task page
         </div>
     <div class="container" id="timeline"></div>
