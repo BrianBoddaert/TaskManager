@@ -13,17 +13,11 @@
             <div class="FillInBox">
                 <h2>Subject: </h2>
                 <asp:DropDownList ID="subjectDropList" runat="server">
-                    <asp:ListItem value="Programmeren">Programmeren</asp:ListItem>
-                    <asp:ListItem value="Management">Management</asp:ListItem>
-                    <asp:ListItem value="Registratie">Registratie</asp:ListItem>
                 </asp:DropDownList>
             </div>
             <div class="FillInBox">
                 <h2>Assignee: </h2>
                 <asp:DropDownList ID="assigneeDropList" runat="server">
-                    <asp:ListItem value="Paul">Paul</asp:ListItem>
-                    <asp:ListItem value="Brian">Brian</asp:ListItem>
-                    <asp:ListItem value="Patrick">Patrick</asp:ListItem>
                 </asp:DropDownList>
             </div>
             <div class="FillInBox">
@@ -40,6 +34,15 @@
                     <option style="background-color:green;" runat="server" selected value="green"></option>
                     <option style="background-color:yellow;" runat="server" value="yellow"></option>
                     <option style="background-color:red;" runat="server" value="red"></option>
+                </select>
+            </div>
+
+            <div class="FillInBox">
+                <h2>Type: </h2>
+                <select ID="typeList" runat="server">
+                    <option  runat="server" selected value="small"></option>
+                    <option  runat="server" value="medium"></option>
+                    <option  runat="server" value="big"></option>
                 </select>
             </div>
 
