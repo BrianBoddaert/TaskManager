@@ -22,9 +22,9 @@
  <div id="navbar" class="container" style="display:flex; height:100%;"> 
      <a href="/"><div><center>Task overview</center> </div></a>
      <a href="/CreateTask.aspx"><div><center>Create task</center></div></a>
-     <a><div><center>Subjects</center> </div></a>
-     <a><div><center>Users</center></div></a>
-     <a><div><center>Log in</center> </div></a>
+     <a href="/CreateSubject.aspx"><div><center>Subjects</center> </div></a>
+     <a href="/AllUsers.aspx"><div><center>Users</center></div></a>
+     <a href="/Login.aspx"><div><center>Log in</center> </div></a>
  </div>
 
 </div>          
