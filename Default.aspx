@@ -2,6 +2,7 @@
 
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent1" Runat="Server">
     <div class="container" id="taskoverview" >
+<<<<<<< HEAD
         <div class="taskbar" style="overflow-y: scroll;">
  <div class ="taskbartitle" style="background-color:#88C178;"> Small tasks  </div>     
                 <% foreach (var task in allTasks) { %>
@@ -56,6 +57,10 @@
                     <%} %>
                 <%} %>
                 </div>
+=======
+        <div class="taskbar">
+        <div class ="taskbartitle" style="background-color:#88C178">Small tasks  </div>
+>>>>>>> parent of cda0552... Create Task page
         </div>
     <div class="container" id="timeline"></div>
 </asp:Content>
