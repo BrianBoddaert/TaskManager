@@ -10,7 +10,7 @@ public class Task
 {
     public String name;
     public String taskID;
-    public Subject subject;
+    public Subject subject = new Subject();
     public int assignees;
     public DateTime deadline;
     public String description;

@@ -3,6 +3,7 @@
 
 
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent1" runat="Server">
+    <div class="container purplebackground">
     <form id="form1" runat="server">
 
         <div class="FillInBox">
@@ -22,6 +23,7 @@
         <asp:Button ID="submitButton" Text="Add" runat="server" OnClick="addSubject"/>
 
      </form>
+        </div>
 
     <script type="text/javascript" src="script.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
