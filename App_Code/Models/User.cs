@@ -8,10 +8,25 @@ using System.Web;
 /// </summary>
 public class User
 {
-    int userID;
+<<<<<<< HEAD
+<<<<<<< HEAD
+
+    public int userID;
     String username;
     String password;
     public bool isLoggedIn;
+    public int orderInList;
+
+=======
+    String userID;
+    String username;
+    String password;
+>>>>>>> parent of 8314b20... Ediit task
+=======
+    String userID;
+    String username;
+    String password;
+>>>>>>> parent of 8314b20... Ediit task
     public User()
     {
         //
@@ -21,5 +36,5 @@ public class User
 
     public string Password { get => password; set => password = value; }
     public string Username { get => username; set => username = value; }
-    public int UserID { get => userID; set => userID = value; }
+    public string UserID { get => userID; set => userID = value; }
 }
