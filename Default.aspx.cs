@@ -25,6 +25,7 @@ public partial class _Default : System.Web.UI.Page
         string connString = System.Configuration.ConfigurationManager.ConnectionStrings["WebAppConnString"].ToString();
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     private Subject getSubject(int id)
     {
         string connString = System.Configuration.ConfigurationManager.ConnectionStrings["WebAppConnString"].ToString();
@@ -59,6 +60,11 @@ public partial class _Default : System.Web.UI.Page
 
         return tempSubject;
 
+=======
+    protected void addTask(Object sender, EventArgs e)
+    {
+         
+>>>>>>> parent of 8314b20... Ediit task
     }
 =======
         //CREATE A COMMAND
@@ -89,8 +95,10 @@ public partial class _Default : System.Web.UI.Page
         querStr = "";
 
         //CREATE A COMMAND
-        querStr = "SELECT * FROM tasks WHERE assignee_id = '" + LoggedInUser.currentUser.UserID + "'";
+        querStr = "SELECT * FROM tasks";
         cmd = new MySql.Data.MySqlClient.MySqlCommand(querStr, conn);
+
+        
 
         //READ FROM DB
         MySql.Data.MySqlClient.MySqlDataReader reader = cmd.ExecuteReader();
@@ -99,12 +107,17 @@ public partial class _Default : System.Web.UI.Page
             Task t = new Task();
             t.name = reader["name"].ToString();
             t.description = reader["description"].ToString();
-            Console.WriteLine("OKEEEE " + Convert.ToInt32(reader["subject_id"].ToString()));
-            t.subject = getSubject(Convert.ToInt32(reader["subject_id"].ToString()));
             t.urgency = reader["urgency"].ToString();
+<<<<<<< HEAD
             t.taskType = reader["type"].ToString();
 <<<<<<< HEAD
             t.taskID = Convert.ToInt32(reader["id"].ToString());
+=======
+            //name += reader["name"].ToString();
+            //temp += reader["deadline"].ToString();
+            //desc += reader["description"].ToString();
+            // urg += reader["urgency"].ToString();
+>>>>>>> parent of 8314b20... Ediit task
 
 =======
             t.subject.Name = getSubjectName(Int32.Parse(reader["subject_id"].ToString()));
@@ -114,12 +127,6 @@ public partial class _Default : System.Web.UI.Page
 
         conn.Close();
 
-    }
-
-    protected void btnRedirect_Click(object sender, EventArgs e)
-    {
-        System.Diagnostics.Debug.WriteLine("lol");
-        Response.Redirect("EdditTask.aspx");
     }
 
 }

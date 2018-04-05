@@ -8,10 +8,9 @@ using System.Web;
 /// </summary>
 public class Subject
 {
-    int subjectID;
+    String subjectID;
     String name;
     String color;
-    public int orderInList;
     public Subject()
     {
         //
@@ -20,6 +19,6 @@ public class Subject
     }
 
     public string Name { get => name; set => name = value; }
-    public int SubjectID { get => subjectID; set => subjectID = value; }
+    public string SubjectID { get => subjectID; set => subjectID = value; }
     public string Color { get => color; set => color = value; }
 }
