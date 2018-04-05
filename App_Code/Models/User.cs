@@ -9,6 +9,7 @@ using System.Web;
 public class User
 {
 <<<<<<< HEAD
+<<<<<<< HEAD
 
     public int userID;
     String username;
@@ -16,6 +17,11 @@ public class User
     public bool isLoggedIn;
     public int orderInList;
 
+=======
+    String userID;
+    String username;
+    String password;
+>>>>>>> parent of 8314b20... Ediit task
 =======
     String userID;
     String username;

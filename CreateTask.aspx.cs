@@ -15,6 +15,7 @@ public partial class CreateTask : System.Web.UI.Page
     protected void Page_Load(object sender, EventArgs e)
     {
 <<<<<<< HEAD
+<<<<<<< HEAD
         getAllUsers();
 
         int order1 = 0;
@@ -51,6 +52,8 @@ public partial class CreateTask : System.Web.UI.Page
         conn = new MySql.Data.MySqlClient.MySqlConnection(connString);
 
         conn.Open();
+=======
+>>>>>>> parent of 8314b20... Ediit task
 =======
 >>>>>>> parent of 8314b20... Ediit task
 

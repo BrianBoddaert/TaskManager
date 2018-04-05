@@ -5,6 +5,7 @@
 <<<<<<< HEAD
         <div class="taskbar" style="overflow-y: scroll;">
 <<<<<<< HEAD
+<<<<<<< HEAD
  <div class ="taskbartitle" style="background-color:#88C178;"> Small tasks  </div>     
                 <% foreach (var task in allTasks) { %>
                     <%if (task.taskType == "0"){%>
@@ -108,6 +109,8 @@
 >>>>>>> 0e76954a1bead33234fa79f8b5c8b72285a07414
                 </div>
 =======
+=======
+>>>>>>> parent of 8314b20... Ediit task
         <div class ="taskbartitle" style="background-color:#88C178;"> Small tasks  </div>
           <% foreach (var task in allTasks) { %>
              <div class ="taskdiv">
@@ -116,6 +119,7 @@
                 <b>Urgency:</b> <%= task.urgency %>
             </div>
           <% } %>
+<<<<<<< HEAD
 >>>>>>> parent of 8314b20... Ediit task
         </div>
         <div class="taskbar" style="border-left:1px;border-right:1px;">
@@ -124,6 +128,15 @@
         <div class="taskbar">
             <div class ="taskbartitle"  style="background-color:#C93528"> Big tasks </div>
         </div>
+=======
+        </div>
+        <div class="taskbar" style="border-left:1px;border-right:1px;">
+            <div class ="taskbartitle"  style="background-color:#DAFF38"> Medium tasks </div>
+        </div>
+        <div class="taskbar">
+            <div class ="taskbartitle"  style="background-color:#C93528"> Big tasks </div>
+        </div>
+>>>>>>> parent of 8314b20... Ediit task
     </div>
     <div class="container" id="timeline"></div>
 </asp:Content>

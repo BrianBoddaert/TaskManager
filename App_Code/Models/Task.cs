@@ -11,6 +11,7 @@ public class Task
     public String name;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     public int taskID;
     public Subject subject;
 =======
@@ -18,6 +19,11 @@ public class Task
     public Subject subject = new Subject();
 >>>>>>> 0e76954a1bead33234fa79f8b5c8b72285a07414
     public int assignees;
+=======
+    public String taskID;
+    public Subject subject;
+    public List<User> assignees;
+>>>>>>> parent of 8314b20... Ediit task
 =======
     public String taskID;
     public Subject subject;

@@ -26,6 +26,7 @@ public partial class _Default : System.Web.UI.Page
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     private Subject getSubject(int id)
     {
         string connString = System.Configuration.ConfigurationManager.ConnectionStrings["WebAppConnString"].ToString();
@@ -60,6 +61,11 @@ public partial class _Default : System.Web.UI.Page
 
         return tempSubject;
 
+=======
+    protected void addTask(Object sender, EventArgs e)
+    {
+         
+>>>>>>> parent of 8314b20... Ediit task
 =======
     protected void addTask(Object sender, EventArgs e)
     {
@@ -109,19 +115,26 @@ public partial class _Default : System.Web.UI.Page
             t.description = reader["description"].ToString();
             t.urgency = reader["urgency"].ToString();
 <<<<<<< HEAD
+<<<<<<< HEAD
             t.taskType = reader["type"].ToString();
 <<<<<<< HEAD
             t.taskID = Convert.ToInt32(reader["id"].ToString());
 =======
+=======
+>>>>>>> parent of 8314b20... Ediit task
             //name += reader["name"].ToString();
             //temp += reader["deadline"].ToString();
             //desc += reader["description"].ToString();
             // urg += reader["urgency"].ToString();
+<<<<<<< HEAD
 >>>>>>> parent of 8314b20... Ediit task
 
 =======
             t.subject.Name = getSubjectName(Int32.Parse(reader["subject_id"].ToString()));
 >>>>>>> 0e76954a1bead33234fa79f8b5c8b72285a07414
+=======
+
+>>>>>>> parent of 8314b20... Ediit task
             allTasks.Add(t);
         }
 
