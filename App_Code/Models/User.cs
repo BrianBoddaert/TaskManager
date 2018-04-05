@@ -8,9 +8,11 @@ using System.Web;
 /// </summary>
 public class User
 {
-    String userID;
+    public int userID;
     String username;
     String password;
+    public bool isLoggedIn;
+    public int orderInList;
     public User()
     {
         //
@@ -20,5 +22,5 @@ public class User
 
     public string Password { get => password; set => password = value; }
     public string Username { get => username; set => username = value; }
-    public string UserID { get => userID; set => userID = value; }
+    public int UserID { get => userID; set => userID = value; }
 }

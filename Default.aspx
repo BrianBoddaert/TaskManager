@@ -3,21 +3,63 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent1" Runat="Server">
     <div class="container" id="taskoverview" >
         <div class="taskbar" style="overflow-y: scroll;">
-        <div class ="taskbartitle" style="background-color:#88C178;"> Small tasks  </div>
-          <% foreach (var task in allTasks) { %>
-             <div class ="taskdiv">
-                <b>Name:</b>  <%= task.name %> <br />
-                <b>Description:</b> <%= task.description %> <br />
-                <b>Urgency:</b> <%= task.urgency %>
-            </div>
-          <% } %>
+ <div class ="taskbartitle" style="background-color:#88C178;"> Small tasks  </div>     
+                <% foreach (var task in allTasks) { %>
+                    <%if (task.taskType == "0"){%>
+            <a href="EdditTask.aspx?currentTaskID=<%=task.taskID%>" >
+                        <div class ="taskdiv">
+                            <span style="visibility:hidden" id="<%= task.taskID %>"></span>
+                           <b>Name:</b>  <%= task.name %> <br />
+                           <b>Description:</b> <%= task.description %> <br />
+                            <b>Subject:</b> <%= task.subject.Name %> <br />
+                            <%if (task.urgency == "0"){%>
+                                <img style="width:8%; float:right; margin-right: 5px;" src="/images/Small.png" />
+                            <%}else if (task.urgency == "1"){%>
+                                <img style="width:8%; float:right; margin-right: 5px;" src="/images/Medium.png" />
+                            <%}else { %>
+                                <img style="width:8%; float:right; margin-right: 5px;" src="/images/Big.png" />
+                            <% } %>
+                        </div>
+                </a>
+                    <%} %>
+                <%} %>
+                </div>
+                <div class="taskbar" style="border-left:1px;border-right:1px;">
+                    <div class ="taskbartitle"  style="background-color:#DAFF38"> Medium tasks </div>
+                <% foreach (var task in allTasks) { %>
+                    <%if (task.taskType == "1"){%>
+                        <div class ="taskdiv">
+                           <b>Name:</b>  <%= task.name %> <br />
+                           <b>Description:</b> <%= task.description %> <br />
+                            <%if (task.urgency == "0"){%>
+                                <img style="width:8%; float:right; margin-right: 5px;" src="/images/Small.png" />
+                            <%}else if (task.urgency == "1"){%>
+                                <img style="width:8%; float:right; margin-right: 5px;" src="/images/Medium.png" />
+                            <%}else { %>
+                                <img style="width:8%; float:right; margin-right: 5px;" src="/images/Big.png" />
+                            <% } %>
+                        </div>
+                    <%} %>
+                <%} %>
+                </div>
+                <div class="taskbar">
+                    <div class ="taskbartitle"  style="background-color:#C93528"> Big tasks </div>
+                <% foreach (var task in allTasks) { %>
+                    <%if (task.taskType == "2"){%>
+                        <div class ="taskdiv">
+                           <b>Name:</b>  <%= task.name %> <br />
+                           <b>Description:</b> <%= task.description %> <br />
+                            <%if (task.urgency == "0"){%>
+                                <img style="width:8%; float:right; margin-right: 5px;" src="/images/Small.png" />
+                            <%}else if (task.urgency == "1"){%>
+                                <img style="width:8%; float:right; margin-right: 5px;" src="/images/Medium.png" />
+                            <%}else { %>
+                                <img style="width:8%; float:right; margin-right: 5px;" src="/images/Big.png" />
+                            <% } %>
+                        </div>
+                    <%} %>
+                <%} %>
+                </div>
         </div>
-        <div class="taskbar" style="border-left:1px;border-right:1px;">
-            <div class ="taskbartitle"  style="background-color:#DAFF38"> Medium tasks </div>
-        </div>
-        <div class="taskbar">
-            <div class ="taskbartitle"  style="background-color:#C93528"> Big tasks </div>
-        </div>
-    </div>
     <div class="container" id="timeline"></div>
 </asp:Content>
