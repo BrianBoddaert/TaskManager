@@ -1,11 +1,9 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage.master" AutoEventWireup="true" CodeFile="CreateTask.aspx.cs" Inherits="CreateTask" %>
-
-
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage.master" AutoEventWireup="true" CodeFile="EdditTask.aspx.cs" Inherits="EdditTask" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent1" runat="Server">
 
     <form id="form1" runat="server">
-        <div class="container purplebackground" >
+        <div class="container" id="createtask" >
             <div class="FillInBox">
                 <h2>Name: </h2>
                 <asp:TextBox ID="nameTextBox" runat="server" />
@@ -46,7 +44,7 @@
                 </select>
             </div>
 
-            <asp:Button ID="submitButton" Text="Add" runat="server" OnClick="addTask"/>
+            <asp:Button ID="submitButton" Text="Edit" runat="server" OnClick="editTask"/>
         </div>
     </form>
     <script type="text/javascript" src="script.js"></script>
