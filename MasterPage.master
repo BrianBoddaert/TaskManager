@@ -14,7 +14,7 @@
  
    
 <div class="header">
-<h1>PATSSS Task manager </h1>
+<h1>PATSSS Task manager ~ <%=LoggedInUser.currentUser.Username %> </h1>
 </div>
            
    

@@ -8,11 +8,13 @@ using System.Web;
 /// </summary>
 public class User
 {
+
     public int userID;
     String username;
     String password;
     public bool isLoggedIn;
     public int orderInList;
+
     public User()
     {
         //

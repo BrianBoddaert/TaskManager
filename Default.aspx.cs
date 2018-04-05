@@ -20,17 +20,24 @@ public partial class _Default : System.Web.UI.Page
         allTasks.Clear();
         getAllTasks();
     }
+    public String getSubjectName(int id) {
+        //CONNECT TO DB
+        string connString = System.Configuration.ConfigurationManager.ConnectionStrings["WebAppConnString"].ToString();
 
+<<<<<<< HEAD
     private Subject getSubject(int id)
     {
         string connString = System.Configuration.ConfigurationManager.ConnectionStrings["WebAppConnString"].ToString();
 
+=======
+>>>>>>> 0e76954a1bead33234fa79f8b5c8b72285a07414
         conn = new MySql.Data.MySqlClient.MySqlConnection(connString);
 
         conn.Open();
 
         querStr = "";
 
+<<<<<<< HEAD
         querStr = "SELECT * FROM subjects WHERE id = '" + id + "'";
 
         cmd = new MySql.Data.MySqlClient.MySqlCommand(querStr, conn);
@@ -53,7 +60,23 @@ public partial class _Default : System.Web.UI.Page
         return tempSubject;
 
     }
+=======
+        //CREATE A COMMAND
+        querStr = "SELECT * FROM subjects WHERE id = '" + id + "'";
+        cmd = new MySql.Data.MySqlClient.MySqlCommand(querStr, conn);
+>>>>>>> 0e76954a1bead33234fa79f8b5c8b72285a07414
 
+        //READ FROM DB
+        MySql.Data.MySqlClient.MySqlDataReader reader = cmd.ExecuteReader();
+        Subject s = new Subject();
+        while (reader.Read())
+        {
+            s.Name = reader["name"].ToString();
+        }
+
+        conn.Close();
+        return s.Name;
+    }
     public void getAllTasks()
     {
         //CONNECT TO DB
@@ -80,8 +103,12 @@ public partial class _Default : System.Web.UI.Page
             t.subject = getSubject(Convert.ToInt32(reader["subject_id"].ToString()));
             t.urgency = reader["urgency"].ToString();
             t.taskType = reader["type"].ToString();
+<<<<<<< HEAD
             t.taskID = Convert.ToInt32(reader["id"].ToString());
 
+=======
+            t.subject.Name = getSubjectName(Int32.Parse(reader["subject_id"].ToString()));
+>>>>>>> 0e76954a1bead33234fa79f8b5c8b72285a07414
             allTasks.Add(t);
         }
 

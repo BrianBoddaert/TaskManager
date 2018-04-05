@@ -89,7 +89,11 @@ public partial class CreateTask : System.Web.UI.Page
 
         conn.Close();
 
+<<<<<<< HEAD
         loginwarning.Text = "Succesfully registerd, welcome " + username_register.Text + "!";
+=======
+        loginwarning.Text = "Succesfully registered, welcome " + username_register.Text + "!";
+>>>>>>> 0e76954a1bead33234fa79f8b5c8b72285a07414
     }
 
 }

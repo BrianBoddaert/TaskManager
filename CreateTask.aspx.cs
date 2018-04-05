@@ -18,20 +18,30 @@ public partial class CreateTask : System.Web.UI.Page
     protected void Page_Load(object sender, EventArgs e)
     {
         getAllUsers();
+
         int order1 = 0;
         foreach (User u in allUsers)
         {
             u.orderInList = order1;
             order1++;
+        }
+       foreach(User u in allUsers)
+        {
+
             assigneeDropList.Items.Add(new ListItem(u.Username, u.UserID.ToString()));
         }
 
         getAllSubjects();
+
         int order = 0;
         foreach (Subject s in allSubjects)
         {
             s.orderInList = order;
             order++;
+
+        }
+        foreach (Subject s in allSubjects)
+        {
             subjectDropList.Items.Add(new ListItem(s.Name, s.SubjectID.ToString()));
         }
 
